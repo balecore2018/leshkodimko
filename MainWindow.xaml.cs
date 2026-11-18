@@ -29,12 +29,12 @@ namespace SSH
         {
             try
             {
-                int x = Convert.ToInt32(x.Text);
+                int varX = Convert.ToInt32(x.Text);
+                otvet.Content += Math.Pow(varX, 3).ToString();
             } catch (Exception ex)
             {
                 MessageBox.Show("Ошибка: " + ex.Message);
             }
-            otvet.Content += Math.Pow(x, 3).ToString();
         }
     }
 }
