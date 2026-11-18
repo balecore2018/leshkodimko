@@ -24,5 +24,17 @@ namespace SSH
         {
             InitializeComponent();
         }
+
+        private void itogo(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                int x = Convert.ToInt32(x.Text);
+            } catch (Exception ex)
+            {
+                MessageBox.Show("Ошибка: " + ex.Message);
+            }
+            otvet.Content += Math.Pow(x, 3).ToString();
+        }
     }
 }
